@@ -13,15 +13,15 @@
     </figure>
 
    
-        <h1><%= movie.Title %> </h1>    
+        <h1><%= movie.title %> </h1>    
         <br>
         <figure>
-            <img src="<%= movie.Poster %>" alt="<%= movie.Title %>">
+            <img src="<%= poster %>" alt="<%= movie.title %>">
         </figure>
         
-        <p>AÑO: <%= movie.Year %> </p>
-        <p>PREMIOS: <%= movie.Awards %> </p>
-        <p>DURACIÓN: <%= movie.Runtime%> </p>
+        <p>AÑO: <%= moment(movie.release_date).format('DD-MM-YYYY')  %> </p>
+        <p>PREMIOS: <%= movie.awards %> </p>
+        <p>DURACIÓN: <%= movie.length%> min </p>
     
         <br>
    
